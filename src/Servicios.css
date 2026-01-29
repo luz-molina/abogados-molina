@@ -20,6 +20,26 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.servicios-container h3 {
+  color: #D4AF37 !important; /*Dorado*/
+  text-transform: uppercase;/*Tipografía*/
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /*Sombra negra muy marcada*/
+  border-bottom: 2px solid #D4AF37; /*línea inferior*/
+  padding-bottom: 8px;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.servicios-container li {
+  color: #ffffff; /*Blanco para los puntos*/
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
 .servicios-grid {
   display: flex;
   flex-wrap: wrap;
