@@ -4,9 +4,10 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./fondo-servicios.jpg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 
-  padding: 80px 20px;
+  padding: 100px 20px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,4 +57,11 @@
   padding-left: 20px;
   color: #555;
   line-height: 1.6;
+}
+
+@media (min-width: 1024px) {
+  .servicios-container {
+    /*Si el ángel está muy arriba usar center 20% y si está muy abajo usar center 80%*/
+    background-position: center 30%;
+  }
 }
