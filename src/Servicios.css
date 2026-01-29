@@ -1,9 +1,22 @@
 /*src/Servicios.css*/
 .servicios-container {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: auto;
-  text-align: center;
+  /*Ruta de la imagen servicios*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./fondo-servicios.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicios-container h1,
+.servicios-container p {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .servicios-grid {
@@ -15,6 +28,8 @@
 }
 
 .servicios-card {
+  background: rgba(255, 255, 255, 0.95);/*Blanco ligeramente transparente*/
+  backdrop-filter: blur(5px); /*Efecto de vidrio esmerilado*/
   background: #ffffff;
   border-radius: 12px;
   padding: 30px;
