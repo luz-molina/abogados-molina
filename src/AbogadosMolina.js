@@ -12,35 +12,21 @@ export default function Abogados() {
       </header>
 
       <nav style={styles.nav}>
+        <Link to="/" style={styles.link}>Inicio</Link>
         <Link to="/servicios" style={styles.link}>Servicios</Link>
-        <a href="#nosotros" style={styles.link}>Nosotros</a>
-        <a href="#contacto" style={styles.link}>Contacto</a>
+        <Link to="/mision" style={styles.link}>Misión</Link>
+        <Link to="/vision" style={styles.link}>Visión</Link>
+        <Link to="/contacto" style={styles.link}>Contacto</Link>
       </nav>
 
       <main style={styles.container}>
         <div style={styles.overlay}>
-        <section style={{marginBottom: "40px"}}>
-          <h2 style={styles.h2}>Misión</h2>
-          <p style={styles.text}>
-            Proteger los derechos laborales de nuestros clientes mediante un acompañamiento cercano, profesional y
-            trasnparente ofreciendo soluciones legales claras y efectivas en cada estapa del proceso.
+          <h1 style={{color:"white", textAlign: "center", marginTop: "100px", fontSize: "3rem"}}>
+            Molina Gutiérrez & Asociados
+          </h1>
+          <p style={{color: "white", textAlign: "center", fontSize: "1.5rem"}}>
+            Abogados Laborales
           </p>
-        </section>
-
-        <section style={{marginBottom: "40px"}}>
-          <h2 style={styles.h2}>Visión</h2>
-          <p style={styles.text}>
-            Ser un despacho laboral líder, distinguido por la empatía, la confianza y la defensa firme de los derechos
-            laborales, generando un impacto positivo en la vida profesional de nuestros clientes.
-          </p>
-        </section>
-
-        <section id="nosotros">
-          <h2 style={styles.h2}>Sobre el Despacho</h2>
-          <p><strong>Abogado:</strong>  Molina Gutiérrez</p>
-          <p><strong>Teléfono / WhatsApp:</strong> 55 8369 1507</p>
-          <p><strong>Email:</strong> danmolinagu@gmail.com</p>
-        </section>
         </div>
       </main>
 
@@ -112,17 +98,20 @@ const styles = {
   footer: {
     backgroundColor: "#2c3e50",
     color: "#ffffff",
-    textAling: "center",
+    textAlign: "center",
     padding: "15px",
     marginTop: "40px",
     fontSize: "24px",
   },
   overlay: {
-    backgroundColor: "rgba(255, 255, 255, 0.9)",
+    backgroundColor: "rgba(255, 255, 255, 0.2)",
+    backdropFilter: "blur(10px)",
+    WebkitBackdropFilter: "blur(10px)",
     maxWidth: "1000px",
-    margin: "auto",
+    margin: "150px auto 0 auto",
     padding: "40px",
-    borderRadius: "8px",
+    borderRadius: "15px",
+    border: "1px solid rgba(255, 255, 255, 0.3)",
   },
   /*botonServicios: {
     backgroundColor: "2c3e50",
