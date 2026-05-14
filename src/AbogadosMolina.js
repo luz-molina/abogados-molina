@@ -40,9 +40,13 @@ export default function Abogados() {
 const styles = {
   body: {
     fontFamily: "Georgia, serif",
-    backgroundColor: "#f5f5f5",
-    color: "#333",
+    backgroundImage: `url(${fondoAngel})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center top",
+    backgroundAttachment: "fixed",
+    backgroundRepeat: "no-repeat",
     minHeight: "100vh",
+    margin: 0,
   },
   header: {
     backgroundColor: "#fff",
@@ -104,14 +108,10 @@ const styles = {
     fontSize: "24px",
   },
   overlay: {
-    backgroundColor: "rgba(255, 255, 255, 0.2)",
-    backdropFilter: "blur(10px)",
-    WebkitBackdropFilter: "blur(10px)",
     maxWidth: "1000px",
-    margin: "150px auto 0 auto",
-    padding: "40px",
-    borderRadius: "15px",
-    border: "1px solid rgba(255, 255, 255, 0.3)",
+    margin: "250px auto 0 auto",
+    padding: "20px",
+    textAlig: "center",
   },
   /*botonServicios: {
     backgroundColor: "2c3e50",
