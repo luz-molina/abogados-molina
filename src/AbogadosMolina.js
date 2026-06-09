@@ -1,6 +1,7 @@
 import logo from './logo.PNG';
 import fondoAngel from "./angel-noche.jpg";
 import {Link} from "react-router-dom";
+import logoWhatsapp from './whatsapp-icon.png';
 
 export default function Abogados() {
   return (
@@ -29,6 +30,22 @@ export default function Abogados() {
           </p>
         </div>
       </main>
+
+      <div style={{textAlign: "center", marginTop: "25px"}}>
+        <a
+          href="https://wa.me/525544149116?text=Hola,%20solicito%20una%20asesor%C3%ADa%20legal."
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Contactarse por vía WhatsApp"
+          style={styles.whatsappCircle}
+          >
+            <img
+              src={logoWhatsapp}
+              alt="WhatsApp"
+              style={styles.whatsappImage}
+            />
+          </a>
+        </div>
 
       <footer style={styles.footer}>
         <p>© 2026 Molina Gutiérrez & Asociados. Todos los derechos reservados.</p>
@@ -113,13 +130,24 @@ const styles = {
     padding: "20px",
     textAlig: "center",
   },
-  /*botonServicios: {
-    backgroundColor: "2c3e50",
-    color: "white",
-    padding: "10px 20px",
-    border: "none",
-    borderRadius: "5px",
-    fontSize: "16px",
+  whatsappCircle: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "transparent",
+    width: "60px",
+    height: "60px",
+    borderRadius: "50%",
+    boxShadow: "none",
+    transition: "transform 0.2s ease",
     cursor: "pointer",
-  },*/
+  },
+  whatsappImage: {
+    width: "55px",
+    height: "55px",
+    backgroundColor: "transparent",
+    borderRadius: "50%",
+    clipPath: "circle(46% at 46% 46%)",
+    filter:"drop-shadow(2px 4px 6px rgba(0,0,0,0.6))",
+  },
 };
